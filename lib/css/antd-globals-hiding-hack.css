@@ -2,13 +2,8 @@
   /* stylelint-disable at-rule-no-unknown */
   /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
   /* stylelint-disable no-duplicate-selectors */
-  /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
-  /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
-}
-@font-face {
-  font-family: "Monospaced Number";
-  src: local("Tahoma");
-  unicode-range: U+30-39;
+  /* stylelint-disable */
+  /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 }
 @font-face {
   font-family: "Chinese Quote";
@@ -55,8 +50,9 @@
 }
 #RBS-Scheduler-root body {
   margin: 0;
-  font-family: "Monospaced Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
+  font-variant: tabular-nums;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
@@ -180,7 +176,7 @@
 #RBS-Scheduler-root code,
 #RBS-Scheduler-root kbd,
 #RBS-Scheduler-root samp {
-  font-family: Consolas, Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 1em;
 }
 #RBS-Scheduler-root pre {
@@ -330,980 +326,42 @@
 }
 #RBS-Scheduler-root .clearfix:before,
 #RBS-Scheduler-root .clearfix:after {
-  content: " ";
+  content: "";
   display: table;
 }
 #RBS-Scheduler-root .clearfix:after {
   clear: both;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-}
-@font-face {
-  font-family: 'anticon';
-  src: url('https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.eot');
-  /* IE9*/
-  src: url('https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.woff') format('woff'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.ttf') format('truetype'), /* iOS 4.1- */ url('https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.svg#iconfont') format('svg');
 }
 #RBS-Scheduler-root .anticon {
   display: inline-block;
   font-style: normal;
-  vertical-align: baseline;
+  vertical-align: -0.125em;
   text-align: center;
   text-transform: none;
-  line-height: 1;
+  line-height: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#RBS-Scheduler-root .anticon > * {
+  line-height: 1;
+}
+#RBS-Scheduler-root .anticon svg {
+  display: inline-block;
+}
 #RBS-Scheduler-root .anticon:before {
+  display: none;
+}
+#RBS-Scheduler-root .anticon #RBS-Scheduler-root .anticon-icon {
   display: block;
-  font-family: "anticon" !important;
-}
-#RBS-Scheduler-root .anticon-step-forward:before {
-  content: "\e600";
-}
-#RBS-Scheduler-root .anticon-step-backward:before {
-  content: "\e601";
-}
-#RBS-Scheduler-root .anticon-forward:before {
-  content: "\e602";
-}
-#RBS-Scheduler-root .anticon-backward:before {
-  content: "\e603";
-}
-#RBS-Scheduler-root .anticon-caret-right:before {
-  content: "\e604";
-}
-#RBS-Scheduler-root .anticon-caret-left:before {
-  content: "\e605";
-}
-#RBS-Scheduler-root .anticon-caret-down:before {
-  content: "\e606";
-}
-#RBS-Scheduler-root .anticon-caret-up:before {
-  content: "\e607";
-}
-#RBS-Scheduler-root .anticon-right-circle:before {
-  content: "\e608";
-}
-#RBS-Scheduler-root .anticon-circle-right:before {
-  content: "\e608";
-}
-#RBS-Scheduler-root .anticon-caret-circle-right:before {
-  content: "\e608";
-}
-#RBS-Scheduler-root .anticon-left-circle:before {
-  content: "\e609";
-}
-#RBS-Scheduler-root .anticon-circle-left:before {
-  content: "\e609";
-}
-#RBS-Scheduler-root .anticon-caret-circle-left:before {
-  content: "\e609";
-}
-#RBS-Scheduler-root .anticon-up-circle:before {
-  content: "\e60a";
-}
-#RBS-Scheduler-root .anticon-circle-up:before {
-  content: "\e60a";
-}
-#RBS-Scheduler-root .anticon-caret-circle-up:before {
-  content: "\e60a";
-}
-#RBS-Scheduler-root .anticon-down-circle:before {
-  content: "\e60b";
-}
-#RBS-Scheduler-root .anticon-circle-down:before {
-  content: "\e60b";
-}
-#RBS-Scheduler-root .anticon-caret-circle-down:before {
-  content: "\e60b";
-}
-#RBS-Scheduler-root .anticon-right-circle-o:before {
-  content: "\e60c";
-}
-#RBS-Scheduler-root .anticon-circle-o-right:before {
-  content: "\e60c";
-}
-#RBS-Scheduler-root .anticon-caret-circle-o-right:before {
-  content: "\e60c";
-}
-#RBS-Scheduler-root .anticon-left-circle-o:before {
-  content: "\e60d";
-}
-#RBS-Scheduler-root .anticon-circle-o-left:before {
-  content: "\e60d";
-}
-#RBS-Scheduler-root .anticon-caret-circle-o-left:before {
-  content: "\e60d";
-}
-#RBS-Scheduler-root .anticon-up-circle-o:before {
-  content: "\e60e";
-}
-#RBS-Scheduler-root .anticon-circle-o-up:before {
-  content: "\e60e";
-}
-#RBS-Scheduler-root .anticon-caret-circle-o-up:before {
-  content: "\e60e";
-}
-#RBS-Scheduler-root .anticon-down-circle-o:before {
-  content: "\e60f";
-}
-#RBS-Scheduler-root .anticon-circle-o-down:before {
-  content: "\e60f";
-}
-#RBS-Scheduler-root .anticon-caret-circle-o-down:before {
-  content: "\e60f";
-}
-#RBS-Scheduler-root .anticon-verticle-left:before {
-  content: "\e610";
-}
-#RBS-Scheduler-root .anticon-verticle-right:before {
-  content: "\e611";
-}
-#RBS-Scheduler-root .anticon-rollback:before {
-  content: "\e612";
-}
-#RBS-Scheduler-root .anticon-retweet:before {
-  content: "\e613";
-}
-#RBS-Scheduler-root .anticon-shrink:before {
-  content: "\e614";
-}
-#RBS-Scheduler-root .anticon-arrows-alt:before {
-  content: "\e615";
-}
-#RBS-Scheduler-root .anticon-arrow-salt:before {
-  content: "\e615";
-}
-#RBS-Scheduler-root .anticon-reload:before {
-  content: "\e616";
-}
-#RBS-Scheduler-root .anticon-double-right:before {
-  content: "\e617";
-}
-#RBS-Scheduler-root .anticon-double-left:before {
-  content: "\e618";
-}
-#RBS-Scheduler-root .anticon-arrow-down:before {
-  content: "\e619";
-}
-#RBS-Scheduler-root .anticon-arrow-up:before {
-  content: "\e61a";
-}
-#RBS-Scheduler-root .anticon-arrow-right:before {
-  content: "\e61b";
-}
-#RBS-Scheduler-root .anticon-arrow-left:before {
-  content: "\e61c";
-}
-#RBS-Scheduler-root .anticon-down:before {
-  content: "\e61d";
-}
-#RBS-Scheduler-root .anticon-up:before {
-  content: "\e61e";
-}
-#RBS-Scheduler-root .anticon-right:before {
-  content: "\e61f";
-}
-#RBS-Scheduler-root .anticon-left:before {
-  content: "\e620";
-}
-#RBS-Scheduler-root .anticon-minus-square-o:before {
-  content: "\e621";
-}
-#RBS-Scheduler-root .anticon-minus-circle:before {
-  content: "\e622";
-}
-#RBS-Scheduler-root .anticon-minus-circle-o:before {
-  content: "\e623";
-}
-#RBS-Scheduler-root .anticon-minus:before {
-  content: "\e624";
-}
-#RBS-Scheduler-root .anticon-plus-circle-o:before {
-  content: "\e625";
-}
-#RBS-Scheduler-root .anticon-plus-circle:before {
-  content: "\e626";
-}
-#RBS-Scheduler-root .anticon-plus:before {
-  content: "\e627";
-}
-#RBS-Scheduler-root .anticon-info-circle:before {
-  content: "\e628";
-}
-#RBS-Scheduler-root .anticon-info-circle-o:before {
-  content: "\e629";
-}
-#RBS-Scheduler-root .anticon-info:before {
-  content: "\e62a";
-}
-#RBS-Scheduler-root .anticon-exclamation:before {
-  content: "\e62b";
-}
-#RBS-Scheduler-root .anticon-exclamation-circle:before {
-  content: "\e62c";
-}
-#RBS-Scheduler-root .anticon-exclamation-circle-o:before {
-  content: "\e62d";
-}
-#RBS-Scheduler-root .anticon-close-circle:before {
-  content: "\e62e";
-}
-#RBS-Scheduler-root .anticon-cross-circle:before {
-  content: "\e62e";
-}
-#RBS-Scheduler-root .anticon-close-circle-o:before {
-  content: "\e62f";
-}
-#RBS-Scheduler-root .anticon-cross-circle-o:before {
-  content: "\e62f";
-}
-#RBS-Scheduler-root .anticon-check-circle:before {
-  content: "\e630";
-}
-#RBS-Scheduler-root .anticon-check-circle-o:before {
-  content: "\e631";
-}
-#RBS-Scheduler-root .anticon-check:before {
-  content: "\e632";
-}
-#RBS-Scheduler-root .anticon-close:before {
-  content: "\e633";
-}
-#RBS-Scheduler-root .anticon-cross:before {
-  content: "\e633";
-}
-#RBS-Scheduler-root .anticon-customer-service:before {
-  content: "\e634";
-}
-#RBS-Scheduler-root .anticon-customerservice:before {
-  content: "\e634";
-}
-#RBS-Scheduler-root .anticon-credit-card:before {
-  content: "\e635";
-}
-#RBS-Scheduler-root .anticon-code-o:before {
-  content: "\e636";
-}
-#RBS-Scheduler-root .anticon-book:before {
-  content: "\e637";
-}
-#RBS-Scheduler-root .anticon-bars:before {
-  content: "\e639";
-}
-#RBS-Scheduler-root .anticon-question:before {
-  content: "\e63a";
-}
-#RBS-Scheduler-root .anticon-question-circle:before {
-  content: "\e63b";
-}
-#RBS-Scheduler-root .anticon-question-circle-o:before {
-  content: "\e63c";
-}
-#RBS-Scheduler-root .anticon-pause:before {
-  content: "\e63d";
-}
-#RBS-Scheduler-root .anticon-pause-circle:before {
-  content: "\e63e";
-}
-#RBS-Scheduler-root .anticon-pause-circle-o:before {
-  content: "\e63f";
-}
-#RBS-Scheduler-root .anticon-clock-circle:before {
-  content: "\e640";
-}
-#RBS-Scheduler-root .anticon-clock-circle-o:before {
-  content: "\e641";
-}
-#RBS-Scheduler-root .anticon-swap:before {
-  content: "\e642";
-}
-#RBS-Scheduler-root .anticon-swap-left:before {
-  content: "\e643";
-}
-#RBS-Scheduler-root .anticon-swap-right:before {
-  content: "\e644";
-}
-#RBS-Scheduler-root .anticon-plus-square-o:before {
-  content: "\e645";
-}
-#RBS-Scheduler-root .anticon-frown:before {
-  content: "\e646";
-}
-#RBS-Scheduler-root .anticon-frown-circle:before {
-  content: "\e646";
-}
-#RBS-Scheduler-root .anticon-ellipsis:before {
-  content: "\e647";
-}
-#RBS-Scheduler-root .anticon-copy:before {
-  content: "\e648";
-}
-#RBS-Scheduler-root .anticon-menu-fold:before {
-  content: "\e9ac";
-}
-#RBS-Scheduler-root .anticon-mail:before {
-  content: "\e659";
-}
-#RBS-Scheduler-root .anticon-logout:before {
-  content: "\e65a";
-}
-#RBS-Scheduler-root .anticon-link:before {
-  content: "\e65b";
-}
-#RBS-Scheduler-root .anticon-area-chart:before {
-  content: "\e65c";
-}
-#RBS-Scheduler-root .anticon-line-chart:before {
-  content: "\e65d";
-}
-#RBS-Scheduler-root .anticon-home:before {
-  content: "\e65e";
-}
-#RBS-Scheduler-root .anticon-laptop:before {
-  content: "\e65f";
-}
-#RBS-Scheduler-root .anticon-star:before {
-  content: "\e660";
-}
-#RBS-Scheduler-root .anticon-star-o:before {
-  content: "\e661";
-}
-#RBS-Scheduler-root .anticon-folder:before {
-  content: "\e662";
-}
-#RBS-Scheduler-root .anticon-filter:before {
-  content: "\e663";
-}
-#RBS-Scheduler-root .anticon-file:before {
-  content: "\e664";
-}
-#RBS-Scheduler-root .anticon-exception:before {
-  content: "\e665";
-}
-#RBS-Scheduler-root .anticon-meh:before {
-  content: "\e666";
-}
-#RBS-Scheduler-root .anticon-meh-circle:before {
-  content: "\e666";
-}
-#RBS-Scheduler-root .anticon-meh-o:before {
-  content: "\e667";
-}
-#RBS-Scheduler-root .anticon-shopping-cart:before {
-  content: "\e668";
-}
-#RBS-Scheduler-root .anticon-save:before {
-  content: "\e669";
-}
-#RBS-Scheduler-root .anticon-user:before {
-  content: "\e66a";
-}
-#RBS-Scheduler-root .anticon-video-camera:before {
-  content: "\e66b";
-}
-#RBS-Scheduler-root .anticon-to-top:before {
-  content: "\e66c";
-}
-#RBS-Scheduler-root .anticon-team:before {
-  content: "\e66d";
-}
-#RBS-Scheduler-root .anticon-tablet:before {
-  content: "\e66e";
-}
-#RBS-Scheduler-root .anticon-solution:before {
-  content: "\e66f";
-}
-#RBS-Scheduler-root .anticon-search:before {
-  content: "\e670";
-}
-#RBS-Scheduler-root .anticon-share-alt:before {
-  content: "\e671";
-}
-#RBS-Scheduler-root .anticon-setting:before {
-  content: "\e672";
-}
-#RBS-Scheduler-root .anticon-poweroff:before {
-  content: "\e6d5";
-}
-#RBS-Scheduler-root .anticon-picture:before {
-  content: "\e674";
-}
-#RBS-Scheduler-root .anticon-phone:before {
-  content: "\e675";
-}
-#RBS-Scheduler-root .anticon-paper-clip:before {
-  content: "\e676";
-}
-#RBS-Scheduler-root .anticon-notification:before {
-  content: "\e677";
-}
-#RBS-Scheduler-root .anticon-mobile:before {
-  content: "\e678";
-}
-#RBS-Scheduler-root .anticon-menu-unfold:before {
-  content: "\e9ad";
-}
-#RBS-Scheduler-root .anticon-inbox:before {
-  content: "\e67a";
-}
-#RBS-Scheduler-root .anticon-lock:before {
-  content: "\e67b";
-}
-#RBS-Scheduler-root .anticon-qrcode:before {
-  content: "\e67c";
-}
-#RBS-Scheduler-root .anticon-play-circle:before {
-  content: "\e6d0";
-}
-#RBS-Scheduler-root .anticon-play-circle-o:before {
-  content: "\e6d1";
-}
-#RBS-Scheduler-root .anticon-tag:before {
-  content: "\e6d2";
-}
-#RBS-Scheduler-root .anticon-tag-o:before {
-  content: "\e6d3";
-}
-#RBS-Scheduler-root .anticon-tags:before {
-  content: "\e67d";
-}
-#RBS-Scheduler-root .anticon-tags-o:before {
-  content: "\e67e";
-}
-#RBS-Scheduler-root .anticon-cloud-o:before {
-  content: "\e67f";
-}
-#RBS-Scheduler-root .anticon-cloud:before {
-  content: "\e680";
-}
-#RBS-Scheduler-root .anticon-cloud-upload:before {
-  content: "\e681";
-}
-#RBS-Scheduler-root .anticon-cloud-download:before {
-  content: "\e682";
-}
-#RBS-Scheduler-root .anticon-cloud-download-o:before {
-  content: "\e683";
-}
-#RBS-Scheduler-root .anticon-cloud-upload-o:before {
-  content: "\e684";
-}
-#RBS-Scheduler-root .anticon-environment:before {
-  content: "\e685";
-}
-#RBS-Scheduler-root .anticon-environment-o:before {
-  content: "\e686";
-}
-#RBS-Scheduler-root .anticon-eye:before {
-  content: "\e687";
-}
-#RBS-Scheduler-root .anticon-eye-o:before {
-  content: "\e688";
-}
-#RBS-Scheduler-root .anticon-camera:before {
-  content: "\e689";
-}
-#RBS-Scheduler-root .anticon-camera-o:before {
-  content: "\e68a";
-}
-#RBS-Scheduler-root .anticon-windows:before {
-  content: "\e68b";
-}
-#RBS-Scheduler-root .anticon-apple:before {
-  content: "\e68c";
-}
-#RBS-Scheduler-root .anticon-apple-o:before {
-  content: "\e6d4";
-}
-#RBS-Scheduler-root .anticon-android:before {
-  content: "\e938";
-}
-#RBS-Scheduler-root .anticon-android-o:before {
-  content: "\e68d";
-}
-#RBS-Scheduler-root .anticon-aliwangwang:before {
-  content: "\e68e";
-}
-#RBS-Scheduler-root .anticon-aliwangwang-o:before {
-  content: "\e68f";
-}
-#RBS-Scheduler-root .anticon-export:before {
-  content: "\e691";
-}
-#RBS-Scheduler-root .anticon-edit:before {
-  content: "\e692";
-}
-#RBS-Scheduler-root .anticon-circle-down-o:before {
-  content: "\e693";
-}
-#RBS-Scheduler-root .anticon-circle-down-:before {
-  content: "\e694";
-}
-#RBS-Scheduler-root .anticon-appstore-o:before {
-  content: "\e695";
-}
-#RBS-Scheduler-root .anticon-appstore:before {
-  content: "\e696";
-}
-#RBS-Scheduler-root .anticon-scan:before {
-  content: "\e697";
-}
-#RBS-Scheduler-root .anticon-file-text:before {
-  content: "\e698";
-}
-#RBS-Scheduler-root .anticon-folder-open:before {
-  content: "\e699";
-}
-#RBS-Scheduler-root .anticon-hdd:before {
-  content: "\e69a";
-}
-#RBS-Scheduler-root .anticon-ie:before {
-  content: "\e69b";
-}
-#RBS-Scheduler-root .anticon-file-jpg:before {
-  content: "\e69c";
-}
-#RBS-Scheduler-root .anticon-like:before {
-  content: "\e64c";
-}
-#RBS-Scheduler-root .anticon-like-o:before {
-  content: "\e69d";
-}
-#RBS-Scheduler-root .anticon-dislike:before {
-  content: "\e64b";
-}
-#RBS-Scheduler-root .anticon-dislike-o:before {
-  content: "\e69e";
-}
-#RBS-Scheduler-root .anticon-delete:before {
-  content: "\e69f";
-}
-#RBS-Scheduler-root .anticon-enter:before {
-  content: "\e6a0";
-}
-#RBS-Scheduler-root .anticon-pushpin-o:before {
-  content: "\e6a1";
-}
-#RBS-Scheduler-root .anticon-pushpin:before {
-  content: "\e6a2";
-}
-#RBS-Scheduler-root .anticon-heart:before {
-  content: "\e6a3";
-}
-#RBS-Scheduler-root .anticon-heart-o:before {
-  content: "\e6a4";
-}
-#RBS-Scheduler-root .anticon-pay-circle:before {
-  content: "\e6a5";
-}
-#RBS-Scheduler-root .anticon-pay-circle-o:before {
-  content: "\e6a6";
-}
-#RBS-Scheduler-root .anticon-smile:before {
-  content: "\e6a7";
-}
-#RBS-Scheduler-root .anticon-smile-circle:before {
-  content: "\e6a7";
-}
-#RBS-Scheduler-root .anticon-smile-o:before {
-  content: "\e6a8";
-}
-#RBS-Scheduler-root .anticon-frown-o:before {
-  content: "\e6a9";
-}
-#RBS-Scheduler-root .anticon-calculator:before {
-  content: "\e6aa";
-}
-#RBS-Scheduler-root .anticon-message:before {
-  content: "\e6ab";
-}
-#RBS-Scheduler-root .anticon-chrome:before {
-  content: "\e6ac";
-}
-#RBS-Scheduler-root .anticon-github:before {
-  content: "\e6ad";
-}
-#RBS-Scheduler-root .anticon-file-unknown:before {
-  content: "\e6af";
-}
-#RBS-Scheduler-root .anticon-file-excel:before {
-  content: "\e6b0";
-}
-#RBS-Scheduler-root .anticon-file-ppt:before {
-  content: "\e6b1";
-}
-#RBS-Scheduler-root .anticon-file-word:before {
-  content: "\e6b2";
-}
-#RBS-Scheduler-root .anticon-file-pdf:before {
-  content: "\e6b3";
-}
-#RBS-Scheduler-root .anticon-desktop:before {
-  content: "\e6b4";
-}
-#RBS-Scheduler-root .anticon-upload:before {
-  content: "\e6b6";
-}
-#RBS-Scheduler-root .anticon-download:before {
-  content: "\e6b7";
-}
-#RBS-Scheduler-root .anticon-pie-chart:before {
-  content: "\e6b8";
-}
-#RBS-Scheduler-root .anticon-unlock:before {
-  content: "\e6ba";
-}
-#RBS-Scheduler-root .anticon-calendar:before {
-  content: "\e6bb";
-}
-#RBS-Scheduler-root .anticon-windows-o:before {
-  content: "\e6bc";
-}
-#RBS-Scheduler-root .anticon-dot-chart:before {
-  content: "\e6bd";
-}
-#RBS-Scheduler-root .anticon-bar-chart:before {
-  content: "\e6be";
-}
-#RBS-Scheduler-root .anticon-code:before {
-  content: "\e6bf";
-}
-#RBS-Scheduler-root .anticon-api:before {
-  content: "\e951";
-}
-#RBS-Scheduler-root .anticon-plus-square:before {
-  content: "\e6c0";
-}
-#RBS-Scheduler-root .anticon-minus-square:before {
-  content: "\e6c1";
-}
-#RBS-Scheduler-root .anticon-close-square:before {
-  content: "\e6c2";
-}
-#RBS-Scheduler-root .anticon-close-square-o:before {
-  content: "\e6c3";
-}
-#RBS-Scheduler-root .anticon-check-square:before {
-  content: "\e6c4";
-}
-#RBS-Scheduler-root .anticon-check-square-o:before {
-  content: "\e6c5";
-}
-#RBS-Scheduler-root .anticon-fast-backward:before {
-  content: "\e6c6";
-}
-#RBS-Scheduler-root .anticon-fast-forward:before {
-  content: "\e6c7";
-}
-#RBS-Scheduler-root .anticon-up-square:before {
-  content: "\e6c8";
-}
-#RBS-Scheduler-root .anticon-down-square:before {
-  content: "\e6c9";
-}
-#RBS-Scheduler-root .anticon-left-square:before {
-  content: "\e6ca";
-}
-#RBS-Scheduler-root .anticon-right-square:before {
-  content: "\e6cb";
-}
-#RBS-Scheduler-root .anticon-right-square-o:before {
-  content: "\e6cc";
-}
-#RBS-Scheduler-root .anticon-left-square-o:before {
-  content: "\e6cd";
-}
-#RBS-Scheduler-root .anticon-down-square-o:before {
-  content: "\e6ce";
-}
-#RBS-Scheduler-root .anticon-up-square-o:before {
-  content: "\e6cf";
-}
-#RBS-Scheduler-root .anticon-loading:before {
-  content: "\e64d";
-}
-#RBS-Scheduler-root .anticon-loading-3-quarters:before {
-  content: "\e6ae";
-}
-#RBS-Scheduler-root .anticon-bulb:before {
-  content: "\e649";
-}
-#RBS-Scheduler-root .anticon-select:before {
-  content: "\e64a";
-}
-#RBS-Scheduler-root .anticon-addfile:before,
-#RBS-Scheduler-root .anticon-file-add:before {
-  content: "\e910";
-}
-#RBS-Scheduler-root .anticon-addfolder:before,
-#RBS-Scheduler-root .anticon-folder-add:before {
-  content: "\e914";
-}
-#RBS-Scheduler-root .anticon-switcher:before {
-  content: "\e913";
-}
-#RBS-Scheduler-root .anticon-rocket:before {
-  content: "\e90f";
-}
-#RBS-Scheduler-root .anticon-dingding:before {
-  content: "\e923";
-}
-#RBS-Scheduler-root .anticon-dingding-o:before {
-  content: "\e925";
-}
-#RBS-Scheduler-root .anticon-bell:before {
-  content: "\e64e";
-}
-#RBS-Scheduler-root .anticon-disconnect:before {
-  content: "\e64f";
-}
-#RBS-Scheduler-root .anticon-database:before {
-  content: "\e650";
-}
-#RBS-Scheduler-root .anticon-compass:before {
-  content: "\e6db";
-}
-#RBS-Scheduler-root .anticon-barcode:before {
-  content: "\e652";
-}
-#RBS-Scheduler-root .anticon-hourglass:before {
-  content: "\e653";
-}
-#RBS-Scheduler-root .anticon-key:before {
-  content: "\e654";
-}
-#RBS-Scheduler-root .anticon-flag:before {
-  content: "\e655";
-}
-#RBS-Scheduler-root .anticon-layout:before {
-  content: "\e656";
-}
-#RBS-Scheduler-root .anticon-login:before {
-  content: "\e657";
-}
-#RBS-Scheduler-root .anticon-printer:before {
-  content: "\e673";
-}
-#RBS-Scheduler-root .anticon-sound:before {
-  content: "\e6e9";
-}
-#RBS-Scheduler-root .anticon-usb:before {
-  content: "\e6d7";
-}
-#RBS-Scheduler-root .anticon-skin:before {
-  content: "\e6d8";
-}
-#RBS-Scheduler-root .anticon-tool:before {
-  content: "\e6d9";
-}
-#RBS-Scheduler-root .anticon-sync:before {
-  content: "\e6da";
-}
-#RBS-Scheduler-root .anticon-wifi:before {
-  content: "\e6d6";
-}
-#RBS-Scheduler-root .anticon-car:before {
-  content: "\e6dc";
-}
-#RBS-Scheduler-root .anticon-copyright:before {
-  content: "\e6de";
-}
-#RBS-Scheduler-root .anticon-schedule:before {
-  content: "\e6df";
-}
-#RBS-Scheduler-root .anticon-user-add:before {
-  content: "\e6ed";
-}
-#RBS-Scheduler-root .anticon-user-delete:before {
-  content: "\e6e0";
-}
-#RBS-Scheduler-root .anticon-usergroup-add:before {
-  content: "\e6dd";
-}
-#RBS-Scheduler-root .anticon-usergroup-delete:before {
-  content: "\e6e1";
-}
-#RBS-Scheduler-root .anticon-man:before {
-  content: "\e6e2";
-}
-#RBS-Scheduler-root .anticon-woman:before {
-  content: "\e6ec";
-}
-#RBS-Scheduler-root .anticon-shop:before {
-  content: "\e6e3";
-}
-#RBS-Scheduler-root .anticon-gift:before {
-  content: "\e6e4";
-}
-#RBS-Scheduler-root .anticon-idcard:before {
-  content: "\e6e5";
-}
-#RBS-Scheduler-root .anticon-medicine-box:before {
-  content: "\e6e6";
-}
-#RBS-Scheduler-root .anticon-red-envelope:before {
-  content: "\e6e7";
-}
-#RBS-Scheduler-root .anticon-coffee:before {
-  content: "\e6e8";
-}
-#RBS-Scheduler-root .anticon-trademark:before {
-  content: "\e651";
-}
-#RBS-Scheduler-root .anticon-safety:before {
-  content: "\e6ea";
-}
-#RBS-Scheduler-root .anticon-wallet:before {
-  content: "\e6eb";
-}
-#RBS-Scheduler-root .anticon-bank:before {
-  content: "\e6ee";
-}
-#RBS-Scheduler-root .anticon-trophy:before {
-  content: "\e6ef";
-}
-#RBS-Scheduler-root .anticon-contacts:before {
-  content: "\e6f0";
-}
-#RBS-Scheduler-root .anticon-global:before {
-  content: "\e6f1";
-}
-#RBS-Scheduler-root .anticon-shake:before {
-  content: "\e94f";
-}
-#RBS-Scheduler-root .anticon-fork:before {
-  content: "\e6f2";
-}
-#RBS-Scheduler-root .anticon-dashboard:before {
-  content: "\e99a";
-}
-#RBS-Scheduler-root .anticon-profile:before {
-  content: "\e999";
-}
-#RBS-Scheduler-root .anticon-table:before {
-  content: "\e998";
-}
-#RBS-Scheduler-root .anticon-warning:before {
-  content: "\e997";
-}
-#RBS-Scheduler-root .anticon-form:before {
-  content: "\e996";
 }
 #RBS-Scheduler-root .anticon-spin:before {
   display: inline-block;
   animation: loadingCircle 1s infinite linear;
 }
-#RBS-Scheduler-root .anticon-weibo-square:before {
-  content: "\e6f5";
-}
-#RBS-Scheduler-root .anticon-weibo-circle:before {
-  content: "\e6f4";
-}
-#RBS-Scheduler-root .anticon-taobao-circle:before {
-  content: "\e6f3";
-}
-#RBS-Scheduler-root .anticon-html5:before {
-  content: "\e9c7";
-}
-#RBS-Scheduler-root .anticon-weibo:before {
-  content: "\e9c6";
-}
-#RBS-Scheduler-root .anticon-twitter:before {
-  content: "\e9c5";
-}
-#RBS-Scheduler-root .anticon-wechat:before {
-  content: "\e9c4";
-}
-#RBS-Scheduler-root .anticon-youtube:before {
-  content: "\e9c3";
-}
-#RBS-Scheduler-root .anticon-alipay-circle:before {
-  content: "\e9c2";
-}
-#RBS-Scheduler-root .anticon-taobao:before {
-  content: "\e9c1";
-}
-#RBS-Scheduler-root .anticon-skype:before {
-  content: "\e9c0";
-}
-#RBS-Scheduler-root .anticon-qq:before {
-  content: "\e9bf";
-}
-#RBS-Scheduler-root .anticon-medium-workmark:before {
-  content: "\e9be";
-}
-#RBS-Scheduler-root .anticon-gitlab:before {
-  content: "\e9bd";
-}
-#RBS-Scheduler-root .anticon-medium:before {
-  content: "\e9bc";
-}
-#RBS-Scheduler-root .anticon-linkedin:before {
-  content: "\e9bb";
-}
-#RBS-Scheduler-root .anticon-google-plus:before {
-  content: "\e9ba";
-}
-#RBS-Scheduler-root .anticon-dropbox:before {
-  content: "\e9b9";
-}
-#RBS-Scheduler-root .anticon-facebook:before {
-  content: "\e9b8";
-}
-#RBS-Scheduler-root .anticon-codepen:before {
-  content: "\e9b7";
-}
-#RBS-Scheduler-root .anticon-amazon:before {
-  content: "\e9b6";
-}
-#RBS-Scheduler-root .anticon-google:before {
-  content: "\e9b5";
-}
-#RBS-Scheduler-root .anticon-codepen-circle:before {
-  content: "\e9b4";
-}
-#RBS-Scheduler-root .anticon-alipay:before {
-  content: "\e9b3";
-}
-#RBS-Scheduler-root .anticon-ant-design:before {
-  content: "\e9b2";
-}
-#RBS-Scheduler-root .anticon-aliyun:before {
-  content: "\e9f4";
-}
-#RBS-Scheduler-root .anticon-zhihu:before {
-  content: "\e703";
-}
-#RBS-Scheduler-root .anticon-file-markdown:before {
-  content: "\e704";
-}
-#RBS-Scheduler-root .anticon-slack:before {
-  content: "\e705";
-}
-#RBS-Scheduler-root .anticon-slack-square:before {
-  content: "\e706";
-}
-#RBS-Scheduler-root .anticon-behance:before {
-  content: "\e707";
-}
-#RBS-Scheduler-root .anticon-behance-square:before {
-  content: "\e708";
-}
-#RBS-Scheduler-root .anticon-dribbble:before {
-  content: "\e709";
-}
-#RBS-Scheduler-root .anticon-dribbble-square:before {
-  content: "\e70a";
-}
-#RBS-Scheduler-root .anticon-instagram:before {
-  content: "\e70b";
-}
-#RBS-Scheduler-root .anticon-yuque:before {
-  content: "\e70c";
+#RBS-Scheduler-root .anticon-spin {
+  display: inline-block;
+  animation: loadingCircle 1s infinite linear;
 }
 #RBS-Scheduler-root .fade-enter,
 #RBS-Scheduler-root .fade-appear {
@@ -1563,13 +621,42 @@
   }
 }
 @keyframes loadingCircle {
-  0% {
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-  }
   100% {
-    transform-origin: 50% 50%;
     transform: rotate(360deg);
+  }
+}
+#RBS-Scheduler-root [ant-click-animating],
+#RBS-Scheduler-root [ant-click-animating-without-extra-node] {
+  position: relative;
+}
+#RBS-Scheduler-root [ant-click-animating-without-extra-node]:after,
+#RBS-Scheduler-root .ant-click-animating-node {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border-radius: inherit;
+  border: 0 solid #1890ff;
+  opacity: 0.2;
+  animation: fadeEffect 2s cubic-bezier(0.08, 0.82, 0.17, 1), waveEffect 0.4s cubic-bezier(0.08, 0.82, 0.17, 1);
+  animation-fill-mode: forwards;
+  display: block;
+  pointer-events: none;
+}
+@keyframes waveEffect {
+  100% {
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-width: 6px;
+  }
+}
+@keyframes fadeEffect {
+  100% {
+    opacity: 0;
   }
 }
 #RBS-Scheduler-root .slide-up-enter,
