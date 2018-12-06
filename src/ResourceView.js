@@ -38,11 +38,11 @@ class ResourceView extends Component {
             }
 
             return (
-                <tr key={item.slotId}>
-                    <td data-resource-id={item.slotId} style={{height: item.rowHeight}}>
+                // <tr key={item.slotId}>
+                    {/* <td data-resource-id={item.slotId} style={{height: item.rowHeight}}>
                         {slotItem}
-                    </td>
-                </tr>
+                    </td> */}
+                // </tr>
             );
         });
 
@@ -50,7 +50,7 @@ class ResourceView extends Component {
             <div style={{paddingBottom: paddingBottom}}>
                 <table className="resource-table">
                     <tbody>
-                        {resourceList}
+                        {/* {resourceList} */}
                     </tbody>
                 </table>
             </div>

@@ -18,6 +18,7 @@ class Basic extends Component{
         schedulerData.localeMoment.locale('en');
         schedulerData.setResources(DemoData.resources);
         schedulerData.setEvents(DemoData.events);
+        schedulerData.setViewType(ViewTypes.Week)
         this.state = {
             viewModel: schedulerData
         }
@@ -27,9 +28,9 @@ class Basic extends Component{
         const {viewModel} = this.state;
         return (
             <div>
-                <Nav />
+                {/* <Nav /> */}
                 <div>
-                    <h3 style={{textAlign: 'center'}}>Basic example<ViewSrcCode srcCodeUrl="https://github.com/StephenChou1017/react-big-scheduler/blob/master/example/Basic.js" /></h3>
+                    {/* <h3 style={{textAlign: 'center'}}>Basic example<ViewSrcCode srcCodeUrl="https://github.com/StephenChou1017/react-big-scheduler/blob/master/example/Basic.js" /></h3> */}
                     <Scheduler schedulerData={viewModel}
                                prevClick={this.prevClick}
                                nextClick={this.nextClick}
@@ -50,7 +51,7 @@ class Basic extends Component{
                                onScrollBottom={this.onScrollBottom}
                     />
                 </div>
-                <Tips />
+                {/* <Tips /> */}
             </div>
         )
     }

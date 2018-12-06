@@ -2,7 +2,7 @@ import ViewTypes from './ViewTypes'
 import SummaryPos from './SummaryPos'
 
 export default {
-    schedulerWidth: '1000',
+    schedulerWidth: '1300',
     schedulerMaxHeight: 0,
     tableHeaderHeight: 40,
 
@@ -17,7 +17,7 @@ export default {
     customResourceTableWidth: 160,
 
     dayCellWidth: 30,
-    weekCellWidth: 120,
+    weekCellWidth: 160,
     monthCellWidth: 80,
     quarterCellWidth: 80,
     yearCellWidth: 80,
@@ -38,8 +38,8 @@ export default {
     defaultEventBgColor: '#80C5F6',
     selectedAreaColor: '#7EC2F3',
     nonWorkingTimeHeadColor: '#999999',
-    nonWorkingTimeHeadBgColor: '#fff0f6',
-    nonWorkingTimeBodyBgColor: '#fff0f6',
+    nonWorkingTimeHeadBgColor: '#fff',
+    nonWorkingTimeBodyBgColor: '#fff',
     summaryColor: '#666',
     summaryPos: SummaryPos.TopRight,
 
@@ -68,10 +68,10 @@ export default {
     minuteStep: 30,
 
     views: [
-        {viewName: 'Day', viewType: ViewTypes.Day, showAgenda: false, isEventPerspective: false},
+        // {viewName: 'Day', viewType: ViewTypes.Day, showAgenda: false, isEventPerspective: false},
         {viewName: 'Week', viewType: ViewTypes.Week, showAgenda: false, isEventPerspective: false},
         {viewName: 'Month', viewType: ViewTypes.Month, showAgenda: false, isEventPerspective: false},
-        {viewName: 'Quarter', viewType: ViewTypes.Quarter, showAgenda: false, isEventPerspective: false},
-        {viewName: 'Year', viewType: ViewTypes.Year, showAgenda: false, isEventPerspective: false},
+        // {viewName: 'Quarter', viewType: ViewTypes.Quarter, showAgenda: false, isEventPerspective: false},
+        // {viewName: 'Year', viewType: ViewTypes.Year, showAgenda: false, isEventPerspective: false},
     ],
 }

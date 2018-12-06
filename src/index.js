@@ -201,9 +201,9 @@ class Scheduler extends Component {
             let resourceName = schedulerData.isEventPerspective ? config.taskName : config.resourceName;
             tbodyContent = (
                 <tr>
-                    <td style={{width: resourceTableWidth, verticalAlign: 'top'}}>
-                        <div className="resource-view">
-                            <div style={{overflow: "hidden", borderBottom: "1px solid #e9e9e9", height: config.tableHeaderHeight}}>
+                    {/* <td style={{width: resourceTableWidth, verticalAlign: 'top'}}> */}
+                        {/* <div className="resource-view"> */}
+                            {/* <div style={{overflow: "hidden", borderBottom: "1px solid #e9e9e9", height: config.tableHeaderHeight}}>
                                 <div style={{overflowX: "scroll", overflowY: "hidden", margin: `0px 0px -${contentScrollbarHeight}px`}}>
                                     <table className="resource-table">
                                         <thead>
@@ -215,15 +215,15 @@ class Scheduler extends Component {
                                         </thead>
                                     </table>
                                 </div>
-                            </div>
-                            <div style={resourceContentStyle} ref={this.schedulerResourceRef} onMouseOver={this.onSchedulerResourceMouseOver} onMouseOut={this.onSchedulerResourceMouseOut} onScroll={this.onSchedulerResourceScroll}>
-                                <ResourceView
+                            </div> */}
+                            {/* <div style={resourceContentStyle} ref={this.schedulerResourceRef} onMouseOver={this.onSchedulerResourceMouseOver} onMouseOut={this.onSchedulerResourceMouseOut} onScroll={this.onSchedulerResourceScroll}> */}
+                                {/* <ResourceView
                                     {...this.props}
                                     contentScrollbarHeight={resourcePaddingBottom}
-                                />
-                            </div>
-                        </div>
-                    </td>
+                                /> */}
+                            {/* </div>
+                        </div> */}
+                    {/* </td> */}
                     <td>
                         <div className="scheduler-view" style={{width: schedulerContainerWidth, verticalAlign: 'top'}}>
                             <div style={{overflow: "hidden", borderBottom: "1px solid #e9e9e9", height: config.tableHeaderHeight}}>

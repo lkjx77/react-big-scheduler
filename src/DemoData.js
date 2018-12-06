@@ -4,30 +4,6 @@ const DemoData = {
             id: 'r1',
             name: 'Resource1',
         },
-        {
-            id: 'r2',
-            name: 'Resource2',
-        },
-        {
-            id: 'r3',
-            name: 'Resource3',
-        },
-        {
-            id: 'r4',
-            name: 'Resource4',
-        },
-        {
-            id: 'r5',
-            name: 'Resource5',
-        },
-        {
-            id: 'r6',
-            name: 'Resource6',
-        },
-        {
-            id: 'r7',
-            name: 'Resource7Resource7Resource7Resource7Resource7',
-        }
     ],
     events: [
         {
@@ -43,7 +19,7 @@ const DemoData = {
             id: 2,
             start: '2017-12-18 12:30:00',
             end: '2017-12-26 23:30:00',
-            resourceId: 'r2',
+            resourceId: 'r1',
             title: 'I am not resizable',
             resizable: false
         },
@@ -51,7 +27,7 @@ const DemoData = {
             id: 3,
             start: '2017-12-19 12:30:00',
             end: '2017-12-20 23:30:00',
-            resourceId: 'r3',
+            resourceId: 'r1',
             title: 'I am not movable',
             movable: false
         },
@@ -59,7 +35,7 @@ const DemoData = {
             id: 4,
             start: '2017-12-19 14:30:00',
             end: '2017-12-20 23:30:00',
-            resourceId: 'r4',
+            resourceId: 'r1',
             title: 'I am not start-resizable',
             startResizable: false,
         },
@@ -67,7 +43,7 @@ const DemoData = {
             id: 5,
             start: '2017-12-19 15:30:00',
             end: '2017-12-20 23:30:00',
-            resourceId: 'r5',
+            resourceId: 'r1',
             title: 'I am not end-resizable',
             endResizable: false
         },
@@ -75,14 +51,14 @@ const DemoData = {
             id: 6,
             start: '2017-12-19 15:35:00',
             end: '2017-12-19 23:30:00',
-            resourceId: 'r6',
+            resourceId: 'r1',
             title: 'I am normal'
         },
         {
             id: 7,
             start: '2017-12-19 15:40:00',
             end: '2017-12-20 23:30:00',
-            resourceId: 'r7',
+            resourceId: 'r1',
             title: 'I am exceptional',
             bgColor: '#FA9E95'
         },

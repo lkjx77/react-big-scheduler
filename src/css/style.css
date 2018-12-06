@@ -79,6 +79,8 @@ table.resource-table, table.scheduler-bg-table, table.scheduler-table {
     padding: 0;
     border-spacing: 0;
     text-align: center;
+    min-height: 500px;
+    max-height: 880px;
 }
 
 table.scheduler-table {
@@ -140,6 +142,8 @@ table.resource-table tr td:last-child, /*table.scheduler-bg-table tr td:last-chi
 
 .event-container {
     position: relative;
+    min-height: 500px;
+    max-height: 880px;
 }
 
 .event-item {
