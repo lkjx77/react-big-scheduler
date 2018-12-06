@@ -318,10 +318,10 @@ class Scheduler extends Component {
             contentScrollbarHeight = this.schedulerContent.offsetHeight - this.schedulerContent.clientHeight;
             contentScrollbarWidth = this.schedulerContent.offsetWidth - this.schedulerContent.clientWidth;
         }
-        if(!!this.schedulerResource) {
-            resourceScrollbarHeight = this.schedulerResource.offsetHeight - this.schedulerResource.clientHeight;
-            resourceScrollbarWidth = this.schedulerResource.offsetWidth - this.schedulerResource.clientWidth;
-        }
+        // if(!!this.schedulerResource) {
+        //     resourceScrollbarHeight = this.schedulerResource.offsetHeight - this.schedulerResource.clientHeight;
+        //     resourceScrollbarWidth = this.schedulerResource.offsetWidth - this.schedulerResource.clientWidth;
+        // }
         if(!!this.schedulerContentBgTable && !!this.schedulerContentBgTable.offsetHeight){
             contentHeight = this.schedulerContentBgTable.offsetHeight;
         }
@@ -406,8 +406,8 @@ class Scheduler extends Component {
         if(this.currentArea === 0 || this.currentArea === -1) {
             if (this.schedulerHead.scrollLeft != this.schedulerContent.scrollLeft)
                 this.schedulerHead.scrollLeft = this.schedulerContent.scrollLeft;
-            if (this.schedulerResource.scrollTop != this.schedulerContent.scrollTop)
-                this.schedulerResource.scrollTop = this.schedulerContent.scrollTop;
+            // if (this.schedulerResource.scrollTop != this.schedulerContent.scrollTop)
+            //     this.schedulerResource.scrollTop = this.schedulerContent.scrollTop;
         }
 
         const {schedulerData, onScrollLeft, onScrollRight, onScrollTop, onScrollBottom } = this.props;
