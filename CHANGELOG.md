@@ -4,12 +4,30 @@
 * An add-more data bug 
 * Responsive layout
 
+### 2018-12-03
+* Check showPopover property on event level to disable popover
+* Update Scheduler.conflictOccurred
+
+## npm v0.2.5
+
+### 2018-11-29
+* Upgrade antd from 3.2.3 to 3.9.0
+
+## npm v0.2.4
+
+### 2018-11-23
+* Upgrade react-dnd from 2.6.0 to 5.0.0, upgrade react-dnd-html5-backend from 2.6.0 to 5.0.1
+* Upgrade webpack-cli from 2.0.14 to 3.1.1
+* Upgrade dependencies to avoid potential security vulnerabilities: mime, hoek, cryptiles, macaddress, url-parse, randomatic, deep-extend, lodash
+
 ### 2018-11-13
 * Add SchedulerData.behaviors.getNonAgendaViewBodyCellBgColorFunc
 * Add SchedulerData.behaviors.getScrollSpecialMomentFunc
 * Rename SchedulerData.config.scrollToTodayEnabled to SchedulerData.config.scrollToSpecialMomentEnabled
 * Rename SchedulerData.setScrollToToday to SchedulerData.setScrollToSpecialMoment
 * Rename SchedulerData.getScrollToToday to SchedulerData.getScrollToSpecialMoment
+
+## npm v0.2.3(beta)
 
 ### 2018-11-09
 * Fix leaking antd global CSS rules
